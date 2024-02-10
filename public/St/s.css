@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+    width: 100%;
+    background-color: rgb(16, 59, 24);
+    height: 50Px;
+    padding: 7Px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.TwoNav {
+     display: flex;
+     gap: 20px;
+     justify-content: space-between;
+     margin-top: 3px;
+     
+}
+.TwoNav , 
+.Logo{
+   width: 50%;
+}
+.One a {
+    text-decoration: none;
+    padding: 3Px;
+    height: fit-content;
+    font-weight: bold;
+    color: white;
+}
+.One,
+.Two {
+    display: flex;
+    gap: 20px;
+    width: 50%;
+}
+.Two{
+       display: flex;
+    justify-content: end;
+    gap: 24px;
+    cursor: pointer;
+}
+.O ,
+.T{
+    color: white;
+    cursor: pointer;
+    font-size: 23px;
+}
+
+.IsMain {
+    width: 100%;
+    height: 330Px;
+    background-image: url('../Image/TheOne.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.IsMain::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2000;
+    width: 100%;
+}
+.inpuWhite{
+    width: 50%;
+    background-color: white;
+    border-radius: 11px;
+    padding: 8px;
+    z-index: 3000;
+    position: absolute;
+    display: flex;
+    gap: 30px;
+
+}
+.inpuWhite input {
+    padding: 5Px;
+
+    border: none;
+    width: 90%;
+
+    
+}
+.inpuWhite input:focus {
+    outline: none;
+    
+}
+.SVG {
+    width: 20px;
+    height: 30px;
+    margin-top: 6Px;
+    margin-right: 5Px;
+    background-color: rgb(255, 255, 255);
+    align-self: center;
+    opacity: 0.5;
+    transition: 0.5S;
+}
+.inpuWhite input:focus + .SVG{
+    opacity: 1;
+}
+
+.FromLogin {
+     width: 50%;
+     height: fit-content;
+     padding: 10px;
+     background-color: white;
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+     border-radius: 10px;
+     text-align: center;
+}
+.fl{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 130px;
+}
+form h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.fl .FromLogin  form input {
+    width: 90%;
+    padding: 8px;
+    border: none;
+    background-color: rgba(6, 90, 43, 0.389);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+.fl .FromLogin  form button {
+width: 20%;
+margin: 0 auto;
+background-color: rgb(2, 69, 2);
+color: white;
+border-radius: 10px;
+border: none;
+height: 30px;
+}
+.tol {
+    display: flex;
+    flex-direction: column;gap: 11px;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    
+}
+.dd{
+    background-color: rgba(255, 0, 0, 0.369);
+    color: black;
+    width: fit-content;
+    height: fit-content;
+    padding: 6px;
+    border-radius: 10px;
+}
+.ALLPr{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+}
+.ALLPr div{
+    background-color: rgb(216, 216, 216);
+    width: 30%;
+    height: 180px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    /* text-overflow: ; */
+
+    
+}
+.sss{
+    display: flex;
+    justify-content: space-between;
+}
+.q {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 45px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+.AddToCarte {
+    width: 30%;
+    background-color: rgb(155, 155, 155);
+    color: white;
+    padding: 5Px;
+    height: 36px;
+    transition: .5s;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+}
+.AddToCarte:hover{
+    border: 2px solid green;
+}
+.kj{
+    display: flex;
+    justify-content: space-between;
+}
+.DivCarte {
+    width: 70%;
+    height: fit-content;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10PX;
+    background-color: rgb(235, 234, 234);
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+
+}
+.DivCarte div {
+    display: flex;
+    justify-content: space-between;
+}
+.H {
+    display: flex;
+    justify-content: space-between;
+}
+.kj {
+    margin-bottom: 20px;
+}
+.DivCarte p{
+   margin-right: -37px;
+} 
+.ff{
+    width: 10px;
+   background-color:  rgb(235, 234, 234);
+   margin-left:-10px ;
+   text-align: center;
+}
+.DivCarte button {
+    margin-top: 20px;
+}
+.qq {width: 100%;    display: flex;
+    justify-content: end;}
+.qq  a {
+
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    width: 10%;height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ff {color: red;}
+
+.ooop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.sssEE {
+    margin-right: -25px;
+}
+.sssA{
+    margin-right: -6px;
+}
+.al{
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px;
+    height: fit-content;
+    background-color: rgb(131, 191, 169);
+
+}
+.Odre {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    height: fit-content;
+}
+.al {
+    position: relative;
+}
+.eee{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-top: 20px;
+}
